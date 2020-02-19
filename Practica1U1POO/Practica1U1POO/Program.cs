@@ -39,16 +39,22 @@ namespace Practica1U1POO
                     Ejercicios.suma100porteclado();
                     break;
                 case 3:
+                    Ejercicios.sumaNnumeros();
                     break;
                 case 4:
+                    Ejercicios.primeros100Pares();
                     break;
                 case 5:
+                    Ejercicios.imprimirNimpares();
                     break;
                 case 6:
+                    Ejercicios.imprimirNpares();
                     break;
                 case 7:
+                    Ejercicios.imprimirNmultiplos3();
                     break;
                 case 8:
+                    Ejercicios.sumaImparesypares();
                     break;
                 case 9:
                     break;
