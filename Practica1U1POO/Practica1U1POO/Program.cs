@@ -8,18 +8,18 @@ namespace Practica1U1POO
         {
             int opcion = 0;
             Console.WriteLine("Elige una opcion");
-            Console.WriteLine("1.- Ejercicio 1");
-            Console.WriteLine("2.- Ejercicio 2");
-            Console.WriteLine("3.- Ejercicio 3");
-            Console.WriteLine("4.- Ejercicio 4");
-            Console.WriteLine("5.- Ejercicio 5");
-            Console.WriteLine("6.- Ejercicio 6");
-            Console.WriteLine("7.- Ejercicio 7");
-            Console.WriteLine("8.- Ejercicio 8");
-            Console.WriteLine("9.- Ejercicio 9");
-            Console.WriteLine("10.- Ejercicio 10");
-            Console.WriteLine("11.- Ejercicio 11");
-            Console.WriteLine("12.- Ejercicio 12");
+            Console.WriteLine("1.- Suma por teclado");
+            Console.WriteLine("2.- Suma de 100 numeros por teclado");
+            Console.WriteLine("3.- Suma de N numeros");
+            Console.WriteLine("4.- Primeros 100 pares");
+            Console.WriteLine("5.- Imprimir N impares");
+            Console.WriteLine("6.- Imprimir N pares");
+            Console.WriteLine("7.- Imprimir N multiplos de 3");
+            Console.WriteLine("8.- Suma de pares e impares");
+            Console.WriteLine("9.- De decimal a binario");
+            Console.WriteLine("10.- Entre 0 y 999");
+            Console.WriteLine("11.- Carga de valores");
+            Console.WriteLine("12.- Hasta el 9999");
             Console.WriteLine("13.- Ejercicio 13");
             Console.WriteLine("14.- Ejercicio 14");
             Console.WriteLine("15.- Ejercicio 15");
@@ -57,12 +57,16 @@ namespace Practica1U1POO
                     Ejercicios.sumaImparesypares();
                     break;
                 case 9:
+                    Ejercicios.decimalaBinario();
                     break;
                 case 10:
+                    Ejercicios.entre0Y999();
                     break;
                 case 11:
+                    Ejercicios.cargadeValores();
                     break;
                 case 12:
+                    Ejercicios.hastaEl9999();
                     break;
                 case 13:
                     break;

@@ -9,8 +9,8 @@ namespace Practica1U1POO
     /// </summary>
     class Ejercicios
     {/// <summary>
-    /// Declarar el metodo como publico///
-    /// </summary>
+     /// Declarar el metodo como publico///
+     /// </summary>
         public static void sumaPorteclado()
         {
             ///Declarar tres variables con tipo de dato double e igualados a 0///
@@ -58,7 +58,7 @@ namespace Practica1U1POO
         {
             int i;
             Console.WriteLine("Vamos a imprimir los 100 primeros pares");
-            for ( i = 1; i < 201; i ++)
+            for (i = 1; i < 201; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -120,7 +120,7 @@ namespace Practica1U1POO
             Console.WriteLine("Vamos a realizar sumas de pares e impares");
             Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");
             n = int.Parse(Console.ReadLine());
-            for (i = 1; i < n; i++)
+            for (i = 1; i <= n; i++)
             {
                 if (i % 2 == 0)
                 {
@@ -133,6 +133,118 @@ namespace Practica1U1POO
             }
             Console.WriteLine("La suma de los numeros impares es " + impares);
             Console.WriteLine("La suma de los numeros pares es " + pares);
+        }
+        public static void decimalaBinario()
+        {
+            double numero = 0;
+            Console.WriteLine("Ingrese un numero decimal");
+            numero = double.Parse(Console.ReadLine());
+            if (numero > 0)
+            {
+                string cadena = "";
+                while (numero > 0)
+                {
+                    if (numero % 2 == 0)
+                    {
+                        cadena = "0" + cadena;
+                    }
+                    else
+                    {
+                        cadena = "1" + cadena;
+                    }
+                }
+                Console.WriteLine(cadena);
+            }
+            else
+            {
+                if (numero == 0)
+                {
+                    Console.WriteLine("0");
+                }
+            }
+        }
+        public static void entre0Y999()
+            {
+            int numero = 0;
+           do
+            {
+                Console.WriteLine("Escriba un numero entre 0 y 999");
+                numero = int.Parse(Console.ReadLine());
+                if (numero < 100)
+                {
+                    if (numero > 10)
+                    {
+                        Console.WriteLine("Este numero tiene dos digitos");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Este numero tiene un digito");
+                    }
+                }
+                else
+                {
+                    if (numero > 999)
+                    {
+                        Console.WriteLine("Este numero esta fuera de rango");
+                    }
+                   else
+                    {
+                        Console.WriteLine("Este numero tiene tres digitos");
+                    }
+                }
+            } while (numero != 0);
+        }
+        public static void cargadeValores()
+        {
+            int numero = 0;
+            int suma = 0;
+            int n = 0;
+            double promedio = 0;
+            do
+            {
+                Console.WriteLine("Ingrese un numero");
+                numero = int.Parse(Console.ReadLine());
+                suma = suma + numero;
+                if (numero != 0)
+                {
+                    n = n + 1;
+                }
+            } while (numero != 0);
+            Console.WriteLine("Su suma es " + suma);
+            Console.WriteLine("El total de numeros ingresados es " + n);
+            promedio = suma / n;
+            Console.WriteLine("El promedio es " + promedio);
+        }
+        public static void hastaEl9999()
+        {
+            int numero = 0;
+            int suma = 0;
+            do
+            {
+                Console.WriteLine("Ingrese un numero");
+                numero = int.Parse(Console.ReadLine());
+
+                if (numero != 9999)
+                {
+                    suma = suma + numero;
+                }
+            } while (numero != 9999);
+            if (suma > 0)
+            {
+                Console.WriteLine("La suma " + suma + " es mayor a" +
+                    " 0");
+            }
+            else
+            {
+                if (suma == 0)
+                {
+                    Console.WriteLine("La suma " + suma + " es igual a 0");
+                }
+                else
+                {
+                    Console.WriteLine("La suma " + suma + " es menor a 0");
+                }
+            }
         }
     }
 }
