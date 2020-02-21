@@ -20,8 +20,8 @@ namespace Practica1U1POO
             Console.WriteLine("10.- Entre 0 y 999");
             Console.WriteLine("11.- Carga de valores");
             Console.WriteLine("12.- Hasta el 9999");
-            Console.WriteLine("13.- Ejercicio 13");
-            Console.WriteLine("14.- Ejercicio 14");
+            Console.WriteLine("13.- Del 100 al 0");
+            Console.WriteLine("14.- Pares del 0 al 100");
             Console.WriteLine("15.- Ejercicio 15");
             Console.WriteLine("16.- Ejercicio 16");
             Console.WriteLine("17.- Ejercicio 17");
@@ -69,10 +69,13 @@ namespace Practica1U1POO
                     Ejercicios.hastaEl9999();
                     break;
                 case 13:
+                    Ejercicios.del100Al0();
                     break;
                 case 14:
+                    Ejercicios.paresdel0Al100();
                     break;
                 case 15:
+                    Ejercicios.primeros100Numeros();
                     break;
                 case 16:
                     break;

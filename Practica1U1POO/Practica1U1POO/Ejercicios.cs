@@ -246,5 +246,34 @@ namespace Practica1U1POO
                 }
             }
         }
+        public static void del100Al0()
+        {
+            int i = 101;
+            while (i > 0)
+            {
+                i = i - 1;
+                Console.WriteLine(i);
+            }
+        }
+        public static void paresdel0Al100()
+        {
+            int i = 0;
+            while (i <= 98)
+            {
+                i = i + 2;
+                Console.WriteLine(i);
+            }
+              
+        }
+        public static void primeros100Numeros()
+        {
+            int i = 0;
+            while (i < 100)
+            {
+                i = i + i;
+            
+            }
+            Console.WriteLine("La suma de los primeros 100 numeros es " + i);
+        }
     }
 }
