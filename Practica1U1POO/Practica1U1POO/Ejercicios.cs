@@ -13,6 +13,7 @@ namespace Practica1U1POO
      /// </summary>
         public static void sumaPorteclado()
         {
+            Console.WriteLine("VAMOS A REALIZAR LA SUMA DE DOS NUMEROS INGRESADOS POR TECLADO");
             ///Declarar tres variables con tipo de dato double e igualados a 0///
             double num1 = 0, num2 = 0, total = 0;
             ///Pedir por mensaje al usuario que ingrese un numero///
@@ -29,113 +30,146 @@ namespace Practica1U1POO
             Console.WriteLine("El total de su suma es " + total);
 
         }
+        /// <summary>
+        /// Declarar el metodo como publico///
+        /// </summary>
         public static void suma100porteclado()
-        {
+        {///Declarar variable de tipo double para el numero y el total///
+            Console.WriteLine("VAMOS A REALIZAR LA SUMA DE 100 NUMEROS INGRESADOS POR TECLADO");
             double num = 0, total = 0;
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 100; i++)///Abrir ciclo for que se repita 100 veces///
             {
                 Console.WriteLine("Ingrese un numero");
-                num = double.Parse(Console.ReadLine());
-                total = total + num;
+                num = double.Parse(Console.ReadLine());///La variable tomara valores diferentes en cada ciclo///
+                total = total + num;///Se utiliza la variable total como acumulador///
             }
-            Console.WriteLine("El total de su suma es " + total);
+            Console.WriteLine("El total de su suma es " + total);///Imprimir por mensaje el total de la suma///
         }
+
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void sumaNnumeros()
         {
-            int n = 0;
+            Console.WriteLine("VAMOS A REALIZAR LA SUMA DE N NUMEROS INGRESADOS");
+         ///Declarar variable de tipo entero con valor igual a 0///
+         int n = 0;
+            ///Declarar variables de tipo double para ingresar numeros y acumular valores///
             double num = 0, total = 0;
             Console.WriteLine("Ingrese la cantidad de numeros que desea sumar");
-            n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            n = int.Parse(Console.ReadLine()); ///Leer la cantidad de numeros que se desean sumar///
+            for (int i = 0; i < n; i++)///Abrir un ciclo for que incie en cero hasta los n numeros deseados///
             {
-                Console.WriteLine("Ingrese un numero");
-                num = double.Parse(Console.ReadLine());
-                total = total + num;
+                Console.WriteLine("Ingrese un numero");///Pedir al usuario que ingrese los numeros///
+                num = double.Parse(Console.ReadLine());///Leer los numeros///
+                total = total + num;///Acumular los valores en la variable total///
             }
-            Console.WriteLine("El total de su suma es " + total);
+            Console.WriteLine("El total de su suma es " + total);///Imprimir el valor acumulado o sumado///
         }
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void primeros100Pares()
         {
-            int i;
-            Console.WriteLine("Vamos a imprimir los 100 primeros pares");
-            for (i = 1; i < 201; i++)
+            Console.WriteLine("VAMOS A IMPRIMIR LOS 100 PRIMEROS PARES");
+            for (int i = 1; i < 201; i++)///Abrir un ciclo for que inicie en 1 y llegue hasta 201, para mostrar 
+            ///los 100 pares///
             {
-                if (i % 2 == 0)
+                if (i % 2 == 0)///Agregar una condicion, si el contador es divisible entre dos sin residuo es par///
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i);///Se imprime el valor///
                 }
             }
         }
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void imprimirNimpares()
-        {
-            int i;
+        {///Declarar una variable n que seran la cantidad de numeros a evaluar, sera de tipo entero///
             int n = 0;
-            Console.WriteLine("Vamos a imprimir numeros impares");
-            Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");
-            n = int.Parse(Console.ReadLine());
-            for (i = 1; i < n; i++)
+            Console.WriteLine("VAMOS A IMPRIMIR NUMEROS IMPARES");
+            Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");///Pedir al usuario la cantidad de 
+            ///numeros a evaluar///
+            n = int.Parse(Console.ReadLine());///Leer el valor y guardarlo en la variable///
+            for (int i = 1; i < n; i++)///Abrir un ciclo for que inicie en 1 y llegue hasta n///
             {
-                if (i % 2 != 0)
+                if (i % 2 != 0)///Agregar una condicion///
+                ///Si el valor de i se puede dividir entre dos, pero deja residuo, es impar///
                 {
-                    Console.WriteLine(i);
+                    Console.WriteLine(i);///Se imprime el valor impar///
                 }
             }
-        }
+        } 
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void imprimirNpares()
-        {
-            int i;
+        { ///Declarar una variable n que seran la cantidad de numeros a evaluar, sera de tipo entero///
             int n = 0;
-            Console.WriteLine("Vamos a imprimir numeros pares");
-            Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");
-            n = int.Parse(Console.ReadLine());
-            for (i = 1; i < n; i++)
+            Console.WriteLine("VAMOS A IMPRIMIR NUMEROS PARES");
+            Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");///Pedir al usuario la cantidad de 
+        ///numeros a evaluar///
+            n = int.Parse(Console.ReadLine());///Leer el valor y guardarlo en la variable///
+            for (int i = 1; i < n; i++)///Abrir un ciclo for que inicie en 1 y llegue hasta n///
             {
-                if (i % 2 == 0)
+                if (i % 2 == 0)///Agregar una condicion///
                 {
-                    Console.WriteLine(i);
+                    ///Si el contador es divisible entre dos sin residuo es par///
+                    Console.WriteLine(i);///Se imprime el valor par///
                 }
             }
         }
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void imprimirNmultiplos3()
-        {
-            int i;
+        {///Declarar una variable n que seran la cantidad de numeros a evaluar, sera de tipo entero///
             int n = 0;
-            Console.WriteLine("Vamos a imprimir numeros multiplos de 3");
-            Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");
-            n = int.Parse(Console.ReadLine());
-            for (i = 1; i < n; i++)
+            Console.WriteLine("VAMOS A IMPRIMIR NUMEROS MULTIPLOS DE 3");
+            Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");///Pedir al usuario la cantidad de 
+         ///numeros a evaluar///
+            n = int.Parse(Console.ReadLine());///Leer el valor y guardarlo en la variable///
+            for (int i = 1; i < n; i++)///Abrir un ciclo for que inicie en 1 y llegue hasta n///
             {
-                if (i % 3 == 0)
-                {
-                    Console.WriteLine(i);
+                if (i % 3 == 0)///Agregar una condicion///
+                {///Si el contador es divisible entre tres sin residuo es multiplo de 3///
+                    Console.WriteLine(i);///Se imprime el valor multiplo///
                 }
             }
         }
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void sumaImparesypares()
-        {
-            int i;
+        {///Declarar dos variables para acumular valores de pares e impares con valor de 0///
             int pares = 0;
             int impares = 0;
+            ///Declarar una variable n que seran la cantidad de numeros a evaluar, sera de tipo entero///
             int n = 0;
-            Console.WriteLine("Vamos a realizar sumas de pares e impares");
+            Console.WriteLine("VAMOS A REALIZAR SUMA DE PARES E IMPARES");
             Console.WriteLine("Ingrese la cantidad de numeros que desea evaluar");
-            n = int.Parse(Console.ReadLine());
-            for (i = 1; i <= n; i++)
+            n = int.Parse(Console.ReadLine());///Leer el valor y guardarlo en la variable///
+            for (int i = 1; i <= n; i++)///Abrir un ciclo for que inicie en 1 y llegue hasta n///
             {
-                if (i % 2 == 0)
-                {
-                    pares = pares + i;
+                if (i % 2 == 0)///Agregar una condicion///
+                { ///Si el contador es divisible entre dos sin residuo es par///
+                    pares = pares + i;///Se acumula el valor en la variable pares///
                 }
                 else
-                {
+                {///Si no lo es, se acumula el valor en la variable impares///
                     impares = impares + i;
                 }
             }
+            ///Mostrar ambos valores acumulados por mensaje///
             Console.WriteLine("La suma de los numeros impares es " + impares);
             Console.WriteLine("La suma de los numeros pares es " + pares);
         }
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void decimalaBinario()
         {
+            Console.WriteLine("VAMOS A CONVERTIR UN DECIMAL A BINARIO");
             double numero = 0;
             Console.WriteLine("Ingrese un numero decimal");
             numero = double.Parse(Console.ReadLine());
@@ -163,8 +197,12 @@ namespace Practica1U1POO
                 }
             }
         }
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void entre0Y999()
-            {
+        {
+            Console.WriteLine("VAMOS A CONTAR LOS DIGITOS DE LOS NUMEROS INGRESADOS");
             int numero = 0;
            do
             {
@@ -194,6 +232,9 @@ namespace Practica1U1POO
                 }
             } while (numero != 0);
         }
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void cargadeValores()
         {
             int numero = 0;
@@ -215,6 +256,9 @@ namespace Practica1U1POO
             promedio = suma / n;
             Console.WriteLine("El promedio es " + promedio);
         }
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void hastaEl9999()
         {
             int numero = 0;
@@ -246,7 +290,10 @@ namespace Practica1U1POO
                 }
             }
         }
-        public static void del100Al0()
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
+       public static void del100Al0()
         {
             int i = 101;
             while (i > 0)
@@ -255,7 +302,10 @@ namespace Practica1U1POO
                 Console.WriteLine(i);
             }
         }
-        public static void paresdel0Al100()
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
+       public static void paresdel0Al100()
         {
             int i = 0;
             while (i <= 98)
@@ -263,9 +313,12 @@ namespace Practica1U1POO
                 i = i + 2;
                 Console.WriteLine(i);
             }
-              
+
         }
-        public static void multiplosDe3hastan()
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
+       public static void multiplosDe3hastan()
         {
             int n = 0;
             Console.WriteLine("Ingrese un numero");
@@ -279,6 +332,9 @@ namespace Practica1U1POO
                 }
             }
         }
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void cantidadDe10()
         {
             int n = 0;
@@ -310,6 +366,9 @@ namespace Practica1U1POO
             Console.WriteLine("Hay " + entre + " numeros entre 25 y 45");
             Console.WriteLine("Hay " + negativos + " numeros negativos");
         }
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void impuestodeRenta()
         {
             double salario = 0;
@@ -349,6 +408,9 @@ namespace Practica1U1POO
 
             }
         }
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void cincoYcuatro()
         {
             int n = 0;
@@ -370,9 +432,12 @@ namespace Practica1U1POO
                 Console.WriteLine(promedio);
                
             }
-           
+
         }
-        public static void empresa100Empleados()
+         /// <summary>
+        /// Metodo publico///
+        /// </summary>
+       public static void empresa100Empleados()
         {
             double P = 0;
             int horas = 0;
@@ -405,6 +470,9 @@ namespace Practica1U1POO
                 Console.WriteLine("Sueldo Total: " + sueldoT);
             }
         }
+        /// <summary>
+        /// Metodo publico///
+        /// </summary>
         public static void primerosCuadrados()
         {
             int suma = 0;
