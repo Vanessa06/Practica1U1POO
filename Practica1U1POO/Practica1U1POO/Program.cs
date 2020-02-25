@@ -87,8 +87,10 @@ namespace Practica1U1POO
                     Ejercicios.cincoYcuatro();
                     break;
                 case 19:
+                    Ejercicios.empresa100Empleados();
                     break;
                 case 20:
+                    Ejercicios.primerosCuadrados();
                     break;
                 case 21:
                     break;

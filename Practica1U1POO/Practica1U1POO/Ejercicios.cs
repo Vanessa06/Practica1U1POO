@@ -366,11 +366,53 @@ namespace Practica1U1POO
                     suma = suma + n;
                 }
                 promedio = suma / 4;
-                Console.WriteLine("El promedio del juego  es:");
+                Console.WriteLine("El promedio del juego es:");
                 Console.WriteLine(promedio);
                
             }
            
+        }
+        public static void empresa100Empleados()
+        {
+            double P = 0;
+            int horas = 0;
+            double sueldoT = 0;
+            int extras = 0;
+            string nombre, numeroe;
+            Console.WriteLine("Calculo de salario a razon de horas trabajadas");
+            for (int i = 0; i < 100; i++)
+            {
+                Console.WriteLine("Escriba el nombre del empleado");
+                nombre = Console.ReadLine();
+                Console.WriteLine("Escriba el numero de empleado");
+                numeroe = Console.ReadLine();
+                Console.WriteLine("Total de sueldo por hora");
+                P = double.Parse(Console.ReadLine());
+                Console.WriteLine("Total de horas trabajadas");
+                horas = int.Parse(Console.ReadLine());
+                if ( horas > 40)
+                {
+                    extras = horas - 40;
+                    sueldoT = (40 * P) + (extras * 1.5 * P);
+                }
+                else
+                {
+                    sueldoT = horas * P;
+                }
+                Console.WriteLine("Trabajador : ");
+                Console.WriteLine("Nombre: " + nombre);
+                Console.WriteLine("Numero de empleado : " + numeroe);
+                Console.WriteLine("Sueldo Total: " + sueldoT);
+            }
+        }
+        public static void primerosCuadrados()
+        {
+            int suma = 0;
+            for ( int i = 1; i <= 10; i++)
+            {
+                suma = suma + (i * i);
+            }
+            Console.WriteLine("La suma de los cuadrados de los primeros 10 numeros es: " + suma);
         }
     }
 }
