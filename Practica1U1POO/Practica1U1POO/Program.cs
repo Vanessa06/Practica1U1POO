@@ -75,13 +75,16 @@ namespace Practica1U1POO
                     Ejercicios.paresdel0Al100();
                     break;
                 case 15:
-                    Ejercicios.primeros100Numeros();
+                    Ejercicios.multiplosDe3hastan();
                     break;
                 case 16:
+                    Ejercicios.cantidadDe10();
                     break;
                 case 17:
+                    Ejercicios.impuestodeRenta();
                     break;
                 case 18:
+                    Ejercicios.cincoYcuatro();
                     break;
                 case 19:
                     break;

@@ -265,15 +265,112 @@ namespace Practica1U1POO
             }
               
         }
-        public static void primeros100Numeros()
+        public static void multiplosDe3hastan()
         {
-            int i = 0;
-            while (i < 100)
+            int n = 0;
+            Console.WriteLine("Ingrese un numero");
+            n = int.Parse(Console.ReadLine());
+            int i = 1;
+            while (i <= n)
             {
-                i = i + i;
-            
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
             }
-            Console.WriteLine("La suma de los primeros 100 numeros es " + i);
+        }
+        public static void cantidadDe10()
+        {
+            int n = 0;
+            int mayor = 0;
+            int entre = 0;
+            int negativos = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                Console.WriteLine("Ingrese un numero");
+                n = int.Parse(Console.ReadLine());
+
+                if (n > 50)
+                {
+                    mayor = mayor + 1;
+                }
+                else
+                {
+                    if (n < 0)
+                    {
+                        negativos = negativos + 1;
+                    }
+                    if ((n > 25) | (n < 45))
+                    {
+                        entre = entre + 1;
+                    }
+                }
+            }
+            Console.WriteLine("Hay " + mayor + " numeros mayores de 50");
+            Console.WriteLine("Hay " + entre + " numeros entre 25 y 45");
+            Console.WriteLine("Hay " + negativos + " numeros negativos");
+        }
+        public static void impuestodeRenta()
+        {
+            double salario = 0;
+            double salarioA = 0;
+            double deduccion = 0;
+            double salarioAT = 0;
+            int hijos = 0;
+            int n = 0;
+            double impuestos = 0;
+            Console.WriteLine("VAMOS A CALCULAR EL IMPUESTO SOBRE LA RENTA");
+            Console.WriteLine("¿Cuantas veces desea realizar el calculo?");
+            n = int.Parse(Console.ReadLine());
+            for (int i = 0; i < n; i++)
+            {
+                Console.WriteLine("Ingrese su salario semanal");
+                salario = double.Parse(Console.ReadLine());
+                salarioA = salario * 52;
+                Console.WriteLine("¿Cuantos hijos tiene?");
+                hijos = int.Parse(Console.ReadLine());
+                if (hijos == 0)
+                {
+                    salarioAT = salarioA;
+                }
+                if ((hijos == 1) | (hijos == 2))
+                {
+                    deduccion = salarioA * 0.05;
+                  salarioAT = salarioA - deduccion;
+                }
+                else
+                {
+                    deduccion = salarioA * 0.15;
+                    salarioAT = salarioA - deduccion;
+                }
+
+                impuestos = salarioAT * 0.15;
+                Console.WriteLine("El total de los impuestos de renta es de " + impuestos);
+
+            }
+        }
+        public static void cincoYcuatro()
+        {
+            int n = 0;
+            int suma = 0;
+            double promedio = 0;
+            Console.WriteLine("Vamos a realizar 5 juegos con cuatro valores cada uno");
+            Console.WriteLine("Calcularemos el promedio de cada juego");
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Juego numero " + (i + 1));
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.WriteLine("Ingrese el valor numero " + (j + 1));
+                    n = int.Parse(Console.ReadLine());
+                    suma = suma + n;
+                }
+                promedio = suma / 4;
+                Console.WriteLine("El promedio del juego  es:");
+                Console.WriteLine(promedio);
+               
+            }
+           
         }
     }
 }
