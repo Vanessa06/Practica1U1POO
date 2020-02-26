@@ -237,54 +237,58 @@ namespace Practica1U1POO
         /// </summary>
         public static void cargadeValores()
         {
-            int numero = 0;
-            int suma = 0;
-            int n = 0;
-            double promedio = 0;
+            double numero = 0;///Declarar una variable para leer los numeros de tipo double///
+            double suma = 0;///Declarar una variable double que servira como acumulador///
+            int n = 0;///Declarar una variable de tipo entero que servira como contador///
+            double promedio = 0;///Declara una varibale de tipo double para calcular el promedio///
+            Console.WriteLine("VAMOS A CARGAR VALORES MIENTRAS SEAN DIFERENTES DE 0");
             do
             {
-                Console.WriteLine("Ingrese un numero");
-                numero = int.Parse(Console.ReadLine());
-                suma = suma + numero;
-                if (numero != 0)
-                {
+                Console.WriteLine("Ingrese un numero");///Pedir al usuario que ingrese un numero///
+                numero = int.Parse(Console.ReadLine());///Leer el numero///
+                suma = suma + numero;///Acumular los valores en la variable suma///
+                if (numero != 0)///Agregar condicional///
+                {///Si el numero es diferente de 0, el contador ira aumentando en 1///
                     n = n + 1;
                 }
-            } while (numero != 0);
-            Console.WriteLine("Su suma es " + suma);
-            Console.WriteLine("El total de numeros ingresados es " + n);
-            promedio = suma / n;
-            Console.WriteLine("El promedio es " + promedio);
+            } while (numero != 0);///El proceso se repetira mientras el numero ingresado no sea 0;
+            Console.WriteLine("Su suma es " + suma);///Presentar al usuario el valor acumulado///
+            Console.WriteLine("El total de numeros ingresados es " + n);///Mostrar al usuario el total de numeros que ingreso///
+            promedio = suma / n;///Calcular el promedio, diviendo la suma entre los numeros ingresados///
+            Console.WriteLine("El promedio es " + promedio);///Mostrar al usuario el promedio///
         }
          /// <summary>
         /// Metodo publico///
         /// </summary>
         public static void hastaEl9999()
         {
-            int numero = 0;
-            int suma = 0;
+            Console.WriteLine("VAMOS A CARGAR Y SUMAR VALORES MIENTRAS SEAN DIFERENTES DE 9999");
+            int numero = 0;///Declarar una variable de tipo entero para guardar los valores ingresados///
+            int suma = 0;///Declarar una variable de tipo entero para acumular los valores ingresados///
             do
             {
-                Console.WriteLine("Ingrese un numero");
-                numero = int.Parse(Console.ReadLine());
+                Console.WriteLine("Ingrese un numero");///Pedir al usuario que ingrese un valor///
+                numero = int.Parse(Console.ReadLine());///Leer el valor///
 
-                if (numero != 9999)
-                {
+                if (numero != 9999)///Agregar condicional///
+                {///Si el valor ingresado no es 9999, ir acumlandolo en la variable suma///
                     suma = suma + numero;
                 }
-            } while (numero != 9999);
-            if (suma > 0)
+            } while (numero != 9999);///Repetir el proceso mientras el numero ingresado no sea 9999///
+            if (suma > 0)///Si la variable suma al final de proceso tiene un valor menor a cero, imprimir el valor
+            ///e indicar que es menor a 0///
             {
                 Console.WriteLine("La suma " + suma + " es mayor a" +
                     " 0");
             }
-            else
+            else///Si no
             {
-                if (suma == 0)
+                if (suma == 0)///Si al final es igual a 0, imprimir el valor e indicar que es igual a 0///
                 {
                     Console.WriteLine("La suma " + suma + " es igual a 0");
                 }
-                else
+                else///Si no, significa que es mayor de 0, 
+                ///Mostrarlo e indicar que es mayor///
                 {
                     Console.WriteLine("La suma " + suma + " es menor a 0");
                 }
@@ -295,11 +299,12 @@ namespace Practica1U1POO
         /// </summary>
        public static void del100Al0()
         {
-            int i = 101;
-            while (i > 0)
+            Console.WriteLine("VAMOS A IMPRIMIR LOS NUMEROS DEL 100 AL 0");
+            int i = 101;///Declarar un contador, tipo entero con valor inicial de 101;
+            while (i > 0)///Mientras el contador sea mayor a 0///
             {
-                i = i - 1;
-                Console.WriteLine(i);
+                i = i - 1;///Al valor del contador se le restara 1 en cada repeticion///
+                Console.WriteLine(i);///Se imprimira el valor///
             }
         }
          /// <summary>
@@ -307,11 +312,12 @@ namespace Practica1U1POO
         /// </summary>
        public static void paresdel0Al100()
         {
-            int i = 0;
-            while (i <= 98)
+            Console.WriteLine("VAMOS A IMPRIMIR LOS PARES DEL 10 AL 100");
+            int i =10;///Declarar una variable entera como contador con valor de10///
+            while (i <= 98)///Mientras el valor de i sea menor o igual a 98, repetir///
             {
-                i = i + 2;
-                Console.WriteLine(i);
+                i = i + 2;///Al valor del contador sumarle dos unidades///
+                Console.WriteLine(i);///Imprimir despues el valor///
             }
 
         }
@@ -320,13 +326,15 @@ namespace Practica1U1POO
         /// </summary>
        public static void multiplosDe3hastan()
         {
-            int n = 0;
-            Console.WriteLine("Ingrese un numero");
-            n = int.Parse(Console.ReadLine());
-            int i = 1;
-            while (i <= n)
+            Console.WriteLine("VAMOS A IMPRIMIR LOS MULTIPLOS DE 3 HASTA N VALORES");
+            int n = 0;///Declarar variale n de tipo entera para guardar un numero por leer///
+            Console.WriteLine("Ingrese un numero");///Pedir al usuario que ingrese un valor///
+            n = int.Parse(Console.ReadLine());///Leer el valor///
+            int i = 1;///Declara contador con valor de 1///
+            while (i <= n)///Mientras el contador sea menor o igual al valor de n, repetir///
             {
-                if (i % 3 == 0)
+                if (i % 3 == 0)///Agregar condicional, si el valos de i es divisible entre 3 sin resiuos///
+                ///Es multiplo de 3 y se imprime///
                 {
                     Console.WriteLine(i);
                 }
